@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 
 <html lang="en">
 
@@ -12,7 +12,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" href="icon.PNG" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="icon.png" rel="icon" type="image/vnd.microsoft.icon">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
 
@@ -59,17 +59,40 @@
         width: 40%;
         height: 40%;
         margin-top:4%;
+        
     }
-    #side-design {
-        
-        
+    #comment {
+        border-radius:50%;
+        border:solid 1px #ffffff;
+        padding:5px;
+        background-color:#ffffff;
+        float: right;
+        color: #F7AD30;
+        margin-left: 80%;
+        margin-right: 3%;
+        z-index: 1 !important;
+        margin-top: -70px;
+    }
+    #comment-mob {
+        border-radius: 50%;
+        border: solid 1px #ffffff;
+        padding: 8px;
+        background-color: #2352EE;
+        float: right;
+        color: #F7AD30;
+        margin-left: 80%;
+        margin-right: 3%;
+        z-index: 1 !important;
+        margin-top: -70px;
     }
     #side-logo {
+       
         float: right;
         width: 20%;
         height:600px;
         margin-top:-50px;
         margin-right:2%;
+        z-index:0;
     }
     #side-logo-mob {
         float: right;
@@ -79,7 +102,7 @@
         margin-right:2%;
     }
     #coming-soon {
-        margin-top:369px;
+        margin-top:300px;
     }
     
     #coming-soon-desktop {
@@ -111,7 +134,7 @@
         font-weight: 500 !important;
     }
     .cheers {
-        color: #2352EE;
+        color: #55A8DF;
     }
     
 </style>
@@ -132,10 +155,23 @@
 
     <div id="side-design" class="d-none d-lg-block">
         <img id="side-logo" src="Asset 12.png" />
+        <i id="comment" class="fa fa-comment fa-3x" aria-hidden="true"></i>
     </div>
 
     <div id="side-design" class="d-lg-none">
         <img id="side-logo-mob" src="Asset 12.png" />
+    </div>
+
+
+
+    <div id="coming-soon-desktop" class="d-lg-block d-none">
+        <h1 class="coming-soon"><strong>COMING</strong></h1>
+        <h1 class="coming-soon"><strong>SOON...</strong></h1>
+        <div class="description">
+            <p>Just kidding,</p>
+            <p>I have no intention to update </p>
+            <p>anytime soon, <span class="cheers">Cheers!</span></p>
+        </div>
     </div>
 
     <div id="coming-soon" class="d-lg-none d-sm-block">
@@ -146,15 +182,8 @@
             <p>I have no intention to update </p>
             <p>anytime soon, <span class="cheers">Cheers!</span></p>
         </div>
-    </div>
-   
-    <div id="coming-soon-desktop" class="d-lg-block d-none">
-        <h1 class="coming-soon"><strong>COMING</strong></h1>
-        <h1 class="coming-soon"><strong>SOON...</strong></h1>
-        <div class="description">
-            <p>Just kidding,</p>
-            <p>I have no intention to update </p>
-            <p>anytime soon, <span class="cheers">Cheers!</span></p>
+        <div id="message">
+            <i id="comment-mob" class="fa fa-comment fa-3x" aria-hidden="true"></i>
         </div>
     </div>
 
