@@ -55,12 +55,12 @@
         width: 100%;
     }
     #logo {
-        margin: 17px;
+        margin: 27px;
         width: 25%;
         height: 25%;
     }
     #logo-mob {
-        margin: 17px;
+        margin: 27px;
         width: 40%;
         height: 40%;
         margin-top: 4%;
@@ -74,17 +74,20 @@
         float: right;
         color: #F7AD30;
         margin-left: 80%;
-        margin-right: 30px;
+        margin-right: 10px;
         z-index: 1 !important;
-        margin-top: -70px;
+        margin-top: -40px;
+       
     }
+
+   
     
     #side-logo {
         float: right;
         width: 20%;
         height: 600px;
         margin-top: -50px;
-        margin-right: 17px;
+        margin-right: 27px;
         z-index: 0;
     }
     #side-logo-mob {
@@ -92,13 +95,14 @@
         width: 20%;
         height: 100%;
         margin-top: -50px;
-        margin-right: 17px;
+        margin-right: 27px;
     }
     #coming-soon {
         float:right !important;
         margin-left:83%;
+        margin-right:27px !important;
     }
-    
+
     #coming-soon-desktop {
         position: absolute;
         bottom: 20px;
@@ -106,23 +110,23 @@
     .coming-soon {
         color: #2352EE;
         font-family: 'Montserrat', sans-serif;
-        margin-left: 17px;
+        margin-left: 27px;
         
     }
     .coming-soon-mob {
         color: #2352EE;
         font-family: 'Montserrat', sans-serif;
-        margin-left: 17px;
+        margin-left: 27px;
     }
     .description {
-        margin-left: 17px;
+        margin-left: 27px;
         color: #000000;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500 !important;
     }
     .description-mob {
         line-height: 1em;
-        margin-left: 17px;
+        margin-left: 27px;
         color: #000000;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500 !important;
@@ -147,7 +151,34 @@
             // or your desired width
         }
     }
-    
+    @media only screen and (max-width: 992px) {
+        #comment-mob-view {
+            border-radius: 50%;
+            background-color: #F7AD30;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            float: right;
+            color: #F7AD30;
+            margin-left: 80%;
+            margin-right: 10px;
+            z-index: 1 !important;
+            margin-top: -70px;
+        }
+    }
+    #comment-tab-view {
+        border-radius: 50%;
+        background-color: #F7AD30;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        float: right;
+        color: #F7AD30;
+        position: absolute;
+        bottom: 20px;
+        margin-left:90%;
+    }
+  
 </style>
 
 <body>
@@ -166,8 +197,8 @@
 
     <div id="side-design" class="d-none d-lg-block">
         <img id="side-logo" src="Asset 12.png" />
-        <div id="comment"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
     </div>
+    <div id="comment" class="d-none d-lg-block"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     <div id="side-design" class="d-lg-none">
         <img id="side-logo-mob" src="Asset 12.png" />
@@ -175,7 +206,7 @@
 
 
 
-    <div id="coming-soon-desktop" class="d-lg-block myBlock">
+    <div id="coming-soon-desktop" class="d-lg-block  myBlock">
         <h1 class="coming-soon"><strong>COMING</strong></h1>
         <h1 class="coming-soon"><strong>SOON...</strong></h1>
         <div class="description">
@@ -185,10 +216,18 @@
         </div>
     </div>
 
-    <div id="coming-soon" class="d-lg-none d-sm-block myBlock">
-        <div id="comment"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
+    <div id="coming-soon" class="d-lg-none d-md-none d-sm-block myBlock">
+        <div id="comment-mob-view"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     </div>
+
+
+    <div  class="d-lg-none d-md-block d-sm-none d-none myBlock">
+        <div id="comment-tab-view"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
+
+    </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
