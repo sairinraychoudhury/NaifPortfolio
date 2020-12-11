@@ -142,6 +142,19 @@
     p {
         margin: 0.5em;
     }
+    h1 {
+        margin: 0em;
+    }
+    @media only screen and (max-width: 767px) {
+        .myBlock {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 40;
+            // greater value keep it above all width: 100%;
+            // or your desired width
+        }
+    }
     
 </style>
 
@@ -170,7 +183,7 @@
 
 
 
-    <div id="coming-soon-desktop" class="d-lg-block ">
+    <div id="coming-soon-desktop" class="d-lg-block myBlock">
         <h1 class="coming-soon"><strong>COMING</strong></h1>
         <h1 class="coming-soon"><strong>SOON...</strong></h1>
         <div class="description">
