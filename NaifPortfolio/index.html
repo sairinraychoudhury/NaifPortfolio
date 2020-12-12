@@ -151,7 +151,7 @@
             // or your desired width
         }
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width:992px) {
         .myBlock-tab {
             position: fixed;
             left: 93%;
@@ -191,8 +191,19 @@
             margin-left: 90% !important;
         }
     }
+    @media (min-width: 992px) {
+        .myBlock-desktop {
+            position: fixed;
+            left:13%;
+            
+            bottom: 20px;
+            z-index: 40;
+            // greater value keep it above all width: 100%;
+            // or your desired width
+        }
+    }
 
-   
+  
   
 </style>
 
@@ -213,7 +224,7 @@
     <div id="side-design" class="d-none d-lg-block">
         <img id="side-logo" src="Asset 12.png" />
     </div>
-    <div id="comment" class="d-none d-lg-block"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
+    <div id="comment" class="d-none d-lg-block myBlock-desktop"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     <div id="side-design" class="d-lg-none">
         <img id="side-logo-mob" src="Asset 12.png" />
@@ -232,13 +243,13 @@
     </div>
 
     <div id="coming-soon" class="d-lg-none d-md-none d-sm-block myBlock">
-        <div id="comment-mob-view"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
+        <div id="comment-mob-view" > <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     </div>
 
 
     <div  class="d-lg-none d-md-block d-sm-none d-none myBlock-tab">
-        <div id="comment-tab-view"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
+        <div id="comment-tab-view" > <img  src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     </div>
 
