@@ -151,6 +151,16 @@
             // or your desired width
         }
     }
+    @media only screen and (max-width: 1200px) {
+        .myBlock-tab {
+            position: fixed;
+            left: 93%;
+            bottom: 0;
+            z-index: 40;
+            // greater value keep it above all width: 100%;
+            // or your desired width
+        }
+    }
     @media only screen and (max-width: 992px) {
         #comment-mob-view {
             border-radius: 50%;
@@ -161,7 +171,7 @@
             float: right;
             color: #F7AD30;
             margin-left: 80%;
-            margin-right: 10px;
+            margin-right: 5px;
             z-index: 1 !important;
             margin-top: -70px;
 
@@ -178,7 +188,7 @@
             color: #F7AD30;
             position: absolute;
             bottom: 20px;
-            margin-left: 90%;
+            margin-left: 90% !important;
         }
     }
 
@@ -227,7 +237,7 @@
     </div>
 
 
-    <div  class="d-lg-none d-md-block d-sm-none d-none myBlock">
+    <div  class="d-lg-none d-md-block d-sm-none d-none myBlock-tab">
         <div id="comment-tab-view"> <img src="https://www.flaticon.com/svg/static/icons/svg/876/876170.svg"></img></div>
 
     </div>
